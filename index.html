@@ -73,6 +73,45 @@ dialog h2 {margin:0;font-size:22px;} dialog h3 {font-size:15px;margin:19px 0 7px
 @media(max-width:850px){:root {--panel-width:295px;} .app{gap:7px;padding:6px;}h1{font-size:15px;} .node{font-size:14px;} .float-tools{max-width:95%;} }
 @media(max-width:580px){:root {--panel-width:min(92vw,340px);} .app{display:block;padding:5px;position:relative;} .left{position:absolute;inset:5px auto 5px 5px; width:var(--panel-width);background:#0b1220;z-index:60;padding:9px;border:1px solid var(--edge);border-radius:10px;box-shadow:8px 0 25px #0009;} .app.panel-closed .left{transform:translateX(-110%);} .right{height:calc(100dvh - 10px);} #panel-toggle{left:8px;top:55px;} .float-tools{right:7px;top:7px;max-width:calc(100% - 10px);} .float-tools .btn{min-height:31px;} .app:not(.panel-closed) #panel-toggle{left:calc(var(--panel-width) + 4px);top:62px;} }
 @media(prefers-reduced-motion:reduce){.app,.left{transition:none;}}
+  
+/* FONT COMIC CHO TOAN BO WEBSITE */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body,
+button,
+input,
+textarea,
+select,
+.node,
+.node *,
+.toolbar,
+.modal {
+    font-family: 'Patrick Hand', cursive !important;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+}
+
+/* CHU TRONG MINDMAP */
+.node {
+    font-size: 18px !important;
+    line-height: 1.5;
+}
+
+/* NHANH CHINH */
+.node[data-level="0"] {
+    font-size: 22px !important;
+}
+
+/* O NHAP VAN BAN */
+textarea {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* CAC NUT LENH */
+button {
+    font-size: 15px;
+}
 </style>
 </head>
 <body>
